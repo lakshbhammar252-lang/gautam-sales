@@ -1968,12 +1968,6 @@ function sendBillToWhatsApp() {
 
 
             bill +=
-                "કેટેગરી: " +
-                item.category +
-                "\n";
-
-
-            bill +=
                 "ભાવ: " +
                 item.product.price +
                 "\n";
