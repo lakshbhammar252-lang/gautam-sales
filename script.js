@@ -221,8 +221,8 @@ const productData = {
         {
             id: "nani_charbhai",
             name: "નાની ચારભાઈ",
-            price: "₹495",
-            numericPrice: 495
+            price: "₹500",
+            numericPrice: 500
         },
 
         {
