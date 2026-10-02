@@ -201,6 +201,24 @@ const productData = {
 
     ],
 
+    "બુધાલાલ ": [
+
+        {
+            id: "budhalal",
+            name: "બુધાલાલ",
+            price: "₹140",
+            numericPrice: 140
+        },
+
+        {
+            id: "budhalal_10",
+            name: "બુધાલાલ [ 10 પેકેટ ]",
+            price: "₹1370",
+            numericPrice: 1370
+        }
+
+    ],
+
 
 
     "મીરાજ તમાકુ": [
@@ -1965,6 +1983,9 @@ function sendBillToWhatsApp() {
                 ". " +
                 item.product.name +
                 "*\n";
+
+
+          
 
 
             bill +=
