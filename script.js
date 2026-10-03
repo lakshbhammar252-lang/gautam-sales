@@ -523,39 +523,78 @@ const productData = {
     "સીગરેટ": [
 
         {
-            id: "cigarette_four_square_regular_big",
-            name: "ફોર સ્કવેર રેગ્યુલર મોટી [MRP = 115]",
+            id: "fs_regular_64mm_1_pcs",
+            name: "FS Regular 64 mm [ MRP - 89 ]",
+            price: "₹87",
+            numericPrice: 87
+        },
+
+         {
+            id: "fs_regular_64mm_1_box",
+            name: "FS Regular 64 mm box [ MRP - 89 ]",
+            price: "₹1635",
+            numericPrice: 1635
+        },
+
+        {
+            id: "fs_regular_69mm_1_pcs",
+            name: "FS Regular 69 mm [ MRP - 115 ]",
             price: "₹110",
             numericPrice: 110
         },
 
         {
-            id: "cigarette_four_square_crush_big",
-            name: "ફોર સ્કવેર ક્રસ મોટી [MRP = 105]",
-            price: "₹103",
-            numericPrice: 103
+            id: "fs_regular_69mm_1_box",
+            name: "FS Regular 69 mm box [ MRP - 115 ]",
+            price: "₹105",
+            numericPrice: 105
         },
 
-        {
-            id: "cigarette_four_square_crush_small",
-            name: "ફોર સ્કવેર ક્રસ નાની [MRP = 85]",
+         {
+            id: "fs_clove_69mm_1_pcs",
+            name: "FS Crush Clove 64 mm pcs [ MRP - 90 ]",
             price: "₹82",
             numericPrice: 82
         },
 
         {
-            id: "cigarette_bristol",
-            name: "બ્રિસ્ટોલ [MRP = 87]",
-            price: "₹85",
-            numericPrice: 85
+            id: "fs_clove_69mm_1_box",
+            name: "FS Crush Clove 64 mm box [ MRP - 90 ]",
+            price: "₹1560",
+            numericPrice: 1560
         },
 
-        {
-            id: "cigarette_gold_flake_mint",
-            name: "ગોલ્ડ ફ્લેક મિન્ટ [MRP = 125]",
-            price: "₹120",
-            numericPrice: 120
+        
+
+         {
+            id: "fs_crush_64mm_1_pcs",
+            name: "FS Crush 64 mm pcs [ MRP - 85 ]",
+            price: "₹83",
+            numericPrice: 83
+        },
+
+         {
+            id: "fs_crush_64mm_1_box",
+            name: "FS Crush 64 mm box [ MRP - 85 ]",
+            price: "₹1635",
+            numericPrice: 1635
+        },
+
+         {
+            id: "fs_crush_69mm_1_pcs",
+            name: "FS Crush 69 mm pcs [ MRP - 115 ]",
+            price: "₹110",
+            numericPrice: 110
+        },
+
+         {
+            id: "fs_crush_69mm_1_box",
+            name: "FS Crush 69 mm box [ MRP - 115 ]",
+            price: "₹2140",
+            numericPrice: 2140
         }
+
+
 
     ],
 
