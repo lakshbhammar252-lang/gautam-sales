@@ -524,42 +524,42 @@ const productData = {
 
         {
             id: "fs_regular_64mm_1_pcs",
-            name: "FS Regular 64 mm [ MRP - 89 ]",
+            name: "ફોર સ્કવેર રેગ્યુલર નાની [ MRP - 89 ]",
             price: "₹87",
             numericPrice: 87
         },
 
          {
             id: "fs_regular_64mm_1_box",
-            name: "FS Regular 64 mm box [ MRP - 89 ]",
+            name: "ફોર સ્કવેર રેગ્યુલર નાની બોક્સ [ MRP - 89 ]",
             price: "₹1635",
             numericPrice: 1635
         },
 
         {
             id: "fs_regular_69mm_1_pcs",
-            name: "FS Regular 69 mm [ MRP - 115 ]",
+            name: "ફોર સ્કવેર રેગ્યુલર મોટી [ MRP - 115 ]",
             price: "₹110",
             numericPrice: 110
         },
 
         {
             id: "fs_regular_69mm_1_box",
-            name: "FS Regular 69 mm box [ MRP - 115 ]",
-            price: "₹105",
-            numericPrice: 105
+            name: "ફોર સ્કવેર રેગ્યુલર મોટી બોક્સ [ MRP - 115 ]",
+            price: "₹2100",
+            numericPrice: 2100
         },
 
          {
             id: "fs_clove_69mm_1_pcs",
-            name: "FS Crush Clove 64 mm pcs [ MRP - 90 ]",
+            name: "ફોર સ્કવેર કલોવે મોટી [ MRP - 90 ]",
             price: "₹82",
             numericPrice: 82
         },
 
         {
             id: "fs_clove_69mm_1_box",
-            name: "FS Crush Clove 64 mm box [ MRP - 90 ]",
+            name: "ફોર સ્કવેર કલોવે મોટી બોક્સ [ MRP - 90 ]",
             price: "₹1560",
             numericPrice: 1560
         },
@@ -568,28 +568,28 @@ const productData = {
 
          {
             id: "fs_crush_64mm_1_pcs",
-            name: "FS Crush 64 mm pcs [ MRP - 85 ]",
+            name: "ફોર સ્કવેર ક્રશ નાની [ MRP - 85 ]",
             price: "₹83",
             numericPrice: 83
         },
 
          {
             id: "fs_crush_64mm_1_box",
-            name: "FS Crush 64 mm box [ MRP - 85 ]",
+            name: "ફોર સ્કવેર ક્રશ નાની બોક્સ [ MRP - 85 ]",
             price: "₹1635",
             numericPrice: 1635
         },
 
          {
             id: "fs_crush_69mm_1_pcs",
-            name: "FS Crush 69 mm pcs [ MRP - 115 ]",
+            name: "ફોર સ્કવેર ક્રશ મોટી [ MRP - 115 ]",
             price: "₹110",
             numericPrice: 110
         },
 
          {
             id: "fs_crush_69mm_1_box",
-            name: "FS Crush 69 mm box [ MRP - 115 ]",
+            name: "ફોર સ્કવેર ક્રશ મોટી બોક્સ  [ MRP - 115 ]",
             price: "₹2140",
             numericPrice: 2140
         }
