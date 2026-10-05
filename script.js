@@ -413,6 +413,13 @@ const productData = {
         },
 
         {
+            id: "babu_chuno_",
+            name: "બાબુ ચૂનો ",
+            price: "₹35",
+            numericPrice: 35
+        },
+
+        {
             id: "bhagvati_chuno",
             name: "ભગવતી ચૂનો ",
             price: "₹10",
