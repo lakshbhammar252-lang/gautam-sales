@@ -412,12 +412,13 @@ const productData = {
             numericPrice: 310
         },
 
-        {
+         {
             id: "babu_chuno_",
             name: "બાબુ ચૂનો ",
             price: "₹35",
             numericPrice: 35
         },
+
 
         {
             id: "bhagvati_chuno",
@@ -455,24 +456,39 @@ const productData = {
         },
 
         {
+            id: "biskit_20_20_box",
+            name: "20-20 બોક્સ",
+            price: "₹640",
+            numericPrice: 640
+        },
+
+        {
             id: "biskit_parle",
-            name: "પાર્લે",
+            name: "પાર્લે ",
             price: "₹110",
             numericPrice: 110
         },
 
         {
-            id: "biskit_monaco",
-            name: "મોનાકો",
-            price: "₹130",
-            numericPrice: 130
+            id: "biskit_parle_box",
+            name: "પાર્લે બોક્સ",
+            price: "₹650",
+            numericPrice: 650
         },
+
 
         {
             id: "biskit_magic",
             name: "મેજીક",
             price: "₹55",
             numericPrice: 55
+        },
+
+        {
+            id: "biskit_magic_box",
+            name: "મેજીક બોક્સ",
+            price: "₹600",
+            numericPrice: 600
         },
 
         {
@@ -483,8 +499,22 @@ const productData = {
         },
 
         {
+            id: "biskit_crackjack_box",
+            name: "ક્રેકજેક બોક્સ",
+            price: "₹640",
+            numericPrice: 640
+        },
+
+        {
             id: "biskit_happy_happy",
             name: "હેપી-હેપી",
+            price: "₹110",
+            numericPrice: 110
+        },
+
+        {
+            id: "biskit_happy_happy_box",
+            name: "હેપી-હેપી બોક્સ",
             price: "₹110",
             numericPrice: 110
         }
