@@ -1,20 +1,20 @@
 <!DOCTYPE html>
- 
+
 <html lang="gu">
- 
+
 <head>
- 
+
     <meta charset="UTF-8">
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <title>Gautam Sales</title>
- 
+
     <link rel="manifest" href="manifest.json">
- 
+
     <link rel="stylesheet" href="style.css">
- 
- 
+
+
     <style>
         .mode-card,
         .mode-card:not(.active) {
@@ -24,14 +24,14 @@
             color: #000000 !important;
             -webkit-text-fill-color: #000000 !important;
         }
- 
+
         .mode-card .mode-title,
         .mode-card .mode-subtitle {
             color: #000000 !important;
             -webkit-text-fill-color: #000000 !important;
             opacity: 1 !important;
         }
- 
+
         .mode-card.active {
             border: 2px solid transparent !important;
             outline: none !important;
@@ -39,20 +39,20 @@
             color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
         }
- 
+
         .mode-card.active .mode-title,
         .mode-card.active .mode-subtitle {
             color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
             opacity: 1 !important;
         }
- 
+
         .mode-card:focus,
         .mode-card:focus-visible {
             outline: none !important;
             border-color: transparent !important;
         }
- 
+
         /* ===== Quantity note (Cart ni upar) ===== */
         .qty-note {
             margin-top: 22px;
@@ -66,117 +66,117 @@
             text-align: center;
             line-height: 1.5;
         }
- 
+
         .qty-note+.view-cart-btn {
             margin-top: 12px;
         }
     </style>
- 
+
 </head>
- 
- 
+
+
 <body>
- 
- 
- 
+
+
+
     <div id="loginScreen" class="login-container">
- 
- 
- 
- 
+
+
+
+
         <div id="usernamePage" class="login-box">
- 
+
             <div class="login-logo">
                 GS
             </div>
- 
- 
+
+
             <h1>
                 Welcome to
                 <br>
                 Gautam Sales
             </h1>
- 
- 
+
+
             <p class="login-subtitle">
                 તમારું નામ લખીને આગળ વધો
             </p>
- 
- 
+
+
             <input type="text" id="username" placeholder="Enter Username" autocomplete="name">
- 
- 
+
+
             <button class="login-btn" onclick="showWelcomePage()">
                 Next
             </button>
- 
- 
+
+
             <p id="usernameError" class="error-msg"></p>
- 
+
         </div>
- 
- 
- 
- 
- 
+
+
+
+
+
         <div id="welcomePage" class="login-box" style="display:none;">
- 
+
             <div class="welcome-icon">
                 📱
             </div>
- 
- 
+
+
             <h2 id="welcomeUserText">
                 Welcome!
             </h2>
- 
- 
+
+
             <p class="login-subtitle">
                 તમારો મોબાઇલ નંબર નાખો
             </p>
- 
- 
+
+
             <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" inputmode="numeric">
- 
- 
+
+
             <button class="login-btn" onclick="continueToWebsite()">
                 આગળ વધો
             </button>
- 
- 
+
+
             <button class="back-btn" onclick="showUsernamePage()">
                 ← Back
             </button>
- 
- 
+
+
             <p id="loginError" class="error-msg"></p>
- 
+
         </div>
- 
+
     </div>
- 
- 
- 
- 
- 
+
+
+
+
+
     <div id="mainContent" style="display:none;">
- 
- 
- 
- 
+
+
+
+
         <header class="app-header">
- 
+
             <div class="header-logo">
                 GS
             </div>
- 
- 
+
+
             <h1>
                 Gautam Sales
             </h1>
- 
- 
- 
+
+
+
             <button type="button" onclick="showOrderHistory()" title="Order History" style="
                 position:absolute;
                 right:78px;
@@ -203,320 +203,328 @@
             ">
                 🧾
             </button>
- 
- 
+
+
             <button class="cart-top-btn" type="button" onclick="openCart()">
- 
+
                 🛒
- 
+
                 <span id="cartCount" class="cart-count">
                     0
                 </span>
- 
+
             </button>
- 
+
         </header>
- 
- 
- 
- 
- 
+
+
+
+
+
         <div class="search-area">
- 
+
             <div class="search-box">
- 
+
                 <span>
                     🔍
                 </span>
- 
- 
+
+
                 <input type="text" id="searchInput" placeholder="પ્રોડક્ટ / કેટેગરી શોધો..." oninput="searchCategory()">
- 
+
             </div>
- 
+
         </div>
- 
- 
- 
- 
- 
+
+
+
+
+
         <section id="categoryPage" class="main-area">
- 
- 
+
+
             <h2 class="welcome-title">
                 Gautam Sales
             </h2>
- 
- 
+
+
             <p class="welcome-text">
                 Gautam Sales માં આપનું હાર્દિક સ્વાગત છે
             </p>
- 
- 
- 
- 
- 
+
+
+
+
+
             <div class="mode-selector">
- 
+
                 <button id="priceModeBtn" class="mode-card active" type="button" onclick="setMode('price')">
                     <span class="mode-icon">💰</span>
                     <span class="mode-title">ભાવ</span>
                     <span class="mode-subtitle">ફક્ત ભાવ જોવા</span>
                 </button>
- 
+
                 <button id="estimateModeBtn" class="mode-card" type="button" onclick="setMode('estimate')">
                     <span class="mode-icon">🧾</span>
                     <span class="mode-title">એસ્ટિમેટ</span>
                     <span class="mode-subtitle">વસ્તુ પસંદ કરી બિલ બનાવવો</span>
                 </button>
- 
+
             </div>
- 
- 
- 
- 
+
+
+
+
             <div id="categoryGrid" class="category-grid">
- 
- 
+
+
                 <div class="category-card" data-search="vimal વિમલ" onclick="openInsideCategory('વિમલ')">
                     વિમલ
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="બાગબાન bagban" onclick="openInsideCategory('બાગબાન')">
                     બાગબાન
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="ઈગલ તમાકુ eagle tamaku`"
                     onclick="openInsideCategory('ઈગલ તમાકુ ')">
                     ઈગલ તમાકુ
                 </div>
- 
- 
-                <div class="category-card" data-search="સુરેશ તમાકુ suresh tamaku" onclick="openInsideCategory('સુરેશ તમાકુ ')">
+
+
+                <div class="category-card" data-search="સુરેશ તમાકુ suresh tamaku"
+                    onclick="openInsideCategory('સુરેશ તમાકુ ')">
                     સુરેશ તમાકુ
                 </div>
- 
-                <div class="category-card" data-search="સુરેશ તમાકુ suresh tamaku " onclick="openInsideCategory('બુધાલાલ ')">
+
+                <div class="category-card" data-search="સુરેશ તમાકુ suresh tamaku "
+                    onclick="openInsideCategory('બુધાલાલ ')">
                     બુધાલાલ
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="મીરાજ miraj" onclick="openInsideCategory('મીરાજ તમાકુ')">
                     મીરાજ તમાકુ
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="બીડી bidi" onclick="openInsideCategory('બીડી')">
                     બીડી
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="રિંગ 1 KG ring" onclick="openInsideCategory('રિંગ 1 KG ')">
                     રિંગ [ રબ્બર ]
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="શેમ્પૂ shempu" onclick="openInsideCategory('શેમ્પૂ')">
                     શેમ્પૂ
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="રાજલક્ષ્મી rajlaxmi" onclick="openInsideCategory('રાજલક્ષ્મી')">
                     રાજલક્ષ્મી
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="ચુનો chuno" onclick="openInsideCategory('ચુનો')">
                     ચુનો
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="બિસ્કિટ biskit" onclick="openInsideCategory('બિસ્કિટ')">
                     બિસ્કિટ
                 </div>
- 
- 
-                <div class="category-card" data-search="રજવાડી ચા rajvadi cha" onclick="openInsideCategory('રજવાડી ચા')">
+
+
+                <div class="category-card" data-search="રજવાડી ચા rajvadi cha"
+                    onclick="openInsideCategory('રજવાડી ચા')">
                     રજવાડી ચા
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="સાબુ sabu" onclick="openInsideCategory('સાબુ')">
                     સાબુ
                 </div>
- 
- 
+
+
+                <div class="category-card" data-search="બ્લેડ bled" onclick="openInsideCategory('બ્લેડ')">
+                    બ્લેડ
+                </div>
+
+
                 <div class="category-card" data-search="બાકસ bakas" onclick="openInsideCategory('બાકસ')">
                     બાકસ
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="સીગરેટ cigarette સિગરેટ" onclick="openInsideCategory('સીગરેટ')">
                     સીગરેટ
                 </div>
- 
- 
-                <div class="category-card" data-search="અરગબત્તી અગરબત્તી agarbatti" onclick="openInsideCategory('અરગબત્તી')">
+
+
+                <div class="category-card" data-search="અરગબત્તી અગરબત્તી agarbatti"
+                    onclick="openInsideCategory('અરગબત્તી')">
                     અગરબત્તી
                 </div>
- 
- 
+
+
                 <div class="category-card" data-search="સોપારી sopari" onclick="openInsideCategory('સોપારી')">
                     સોપારી
                 </div>
- 
+
             </div>
- 
- 
- 
- 
- 
+
+
+
+
+
             <div class="category-card logout-card" onclick="logout()">
                 🚪 Logout
             </div>
- 
+
         </section>
- 
- 
- 
- 
- 
+
+
+
+
+
         <section id="productPage" class="main-area" style="display:none;">
- 
- 
+
+
             <div class="product-header">
- 
+
                 <button class="back-product-btn" onclick="backToCategories()">
                     ← Back
                 </button>
- 
- 
+
+
                 <h2 id="productCategoryTitle">
                     Products
                 </h2>
- 
+
             </div>
- 
- 
+
+
             <div id="productGrid" class="product-grid"></div>
- 
- 
-            <!-- નોંધ: બધી category માં આપોઆપ દેખાશે (productPage એક જ છે) -->
+
+
             <div class="qty-note">
                 ⚠️ નોંધ: જેટલી વસ્તુની કોન્ટિટી વધસે તેમ બિલ માં ભાવ ઘટસે .
             </div>
- 
- 
+
+
             <button class="view-cart-btn" onclick="openCart()">
                 🛒 Cart જુઓ
             </button>
- 
+
         </section>
- 
+
     </div>
- 
- 
- 
- 
- 
+
+
+
+
+
     <div id="cartOverlay" class="cart-overlay" onclick="closeCartOutside(event)">
- 
+
         <div class="cart-modal" onclick="event.stopPropagation()">
- 
- 
+
+
             <div class="cart-header">
- 
+
                 <div>
- 
+
                     <h2>
                         🛒 તમારો Cart
                     </h2>
- 
+
                     <p>
                         તમારો Order
                     </p>
- 
+
                 </div>
- 
- 
+
+
                 <button class="cart-close-btn" type="button" onclick="closeCart()">
                     ×
                 </button>
- 
+
             </div>
- 
- 
- 
- 
- 
+
+
+
+
+
             <div class="bill-customer-info">
- 
+
                 <p>
- 
+
                     👤
- 
+
                     <strong>
                         નામ:
                     </strong>
- 
+
                     <span id="billCustomerName">
                         -
                     </span>
- 
+
                 </p>
- 
- 
+
+
                 <p>
- 
+
                     📱
- 
+
                     <strong>
                         મોબાઇલ:
                     </strong>
- 
+
                     <span id="billCustomerMobile">
                         -
                     </span>
- 
+
                 </p>
- 
+
             </div>
- 
- 
- 
- 
- 
+
+
+
+
+
             <div id="cartItems" class="cart-items"></div>
- 
- 
- 
- 
- 
+
+
+
+
+
             <div id="cartEmpty" class="cart-empty" style="display:none;">
                 🛒 Cart હાલ ખાલી છે.
             </div>
- 
- 
- 
- 
+
+
+
+
             <div class="cart-total">
- 
+
                 <span>
                     કુલ બિલ:
                 </span>
- 
+
                 <strong id="cartGrandTotal">
                     ₹0
                 </strong>
- 
+
             </div>
- 
- 
- 
- 
- 
+
+
+
+
+
             <button class="whatsapp-btn" type="button" onclick="sendBillToWhatsApp()" style="
                 width:100%;
                 min-height:58px;
@@ -550,63 +558,54 @@
             ">
                 🟢 Gautam Sales પર Bill મોકલો
             </button>
- 
+
         </div>
- 
+
     </div>
- 
- 
- 
- 
+
+
+
+
     <script src="script.js"></script>
- 
- 
- 
+
+
+
     <script>
- 
+
         if ('serviceWorker' in navigator) {
- 
+
             window.addEventListener(
                 'load',
                 () => {
- 
+
                     navigator.serviceWorker
                         .register('sw.js')
- 
+
                         .then(reg => {
- 
+
                             console.log(
                                 'PWA Registered Successfully!'
                             );
- 
+
                         })
- 
+
                         .catch(err => {
- 
+
                             console.log(
                                 'PWA Registration Failed:',
                                 err
                             );
- 
+
                         });
- 
+
                 }
             );
- 
+
         }
- 
+
     </script>
- 
- 
+
+
 </body>
- 
+
 </html>
- 
-
-
-
-
-
-
-
-
