@@ -110,6 +110,13 @@ const productData = {
             numericPrice: 168.5
         },
 
+         {
+            id: "bagban_47_pouch",
+            name: "બાગબાન 47 પાઉચ",
+            price: "₹60",
+            numericPrice: 60 
+        },
+
         {
             id: "bagban_128_tin_box",
             name: "બાગબાન 128 ટીન બોક્સ",
@@ -332,6 +339,19 @@ const productData = {
         }
 
     ],
+
+    
+    "બ્લેડ": [
+
+        {
+            id: "lezar_bled",
+            name: "લેજર બ્લેડ",
+            price: "₹85",
+            numericPrice: 85 
+        },
+
+    ],
+
 
 
 
