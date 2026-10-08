@@ -668,6 +668,55 @@ const productData = {
 
     ],
 
+    
+    "બલ્બ": [
+
+        {
+            id: "bulb_9w",
+            name: "બલ્બ 9 W",
+            price: "₹35",
+            numericPrice: 35
+        },
+
+        {
+            id: "bulb_9w_15_PCS",
+            name: "બલ્બ 9 W [ 15 બલ્બ ] ",
+            price: "₹495",
+            numericPrice: 495
+        },
+
+        {
+            id: "bulb_12W",
+            name: "બલ્બ 12 W ",
+            price: "₹60",
+            numericPrice: 60
+        },
+
+        {
+            id: "bulb_12w_15_PCS",
+            name: "બલ્બ 12 W [ 15 બલ્બ ] ",
+            price: "₹825",
+            numericPrice: 825
+        },
+
+        {
+            id: "bulb_15W",
+            name: "બલ્બ 15 W ",
+            price: "₹80",
+            numericPrice: 80
+        },
+
+        {
+            id: "bulb_15w_15_PCS",
+            name: "બલ્બ 15 W [ 15 બલ્બ ] ",
+            price: "₹1050",
+            numericPrice: 1050
+        }
+
+
+
+    ],
+
 
 
     "સોપારી": [
@@ -1120,12 +1169,14 @@ function openInsideCategory(
         "block";
 
 
-    document
-        .getElementById(
-            "productCategoryTitle"
-        )
-        .innerText =
-        categoryName;
+   document
+    .getElementById(
+        "productCategoryTitle"
+    )
+    .innerText =
+        categoryName === "બલ્બ"
+            ? "બલ્બ { બધા બલ્બમાં 1 વર્ષની વોરંટી આપવામાં આવે છે }"
+            : categoryName;
 
 
     renderProducts(
