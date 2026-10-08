@@ -709,8 +709,8 @@ const productData = {
         {
             id: "bulb_15w_15_PCS",
             name: "બલ્બ 15 W [ 15 બલ્બ ] ",
-            price: "₹1050",
-            numericPrice: 1050
+            price: "₹1125",
+            numericPrice: 1125
         }
 
 
