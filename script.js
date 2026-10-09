@@ -110,11 +110,11 @@ const productData = {
             numericPrice: 168.5
         },
 
-         {
+        {
             id: "bagban_47_pouch",
             name: "બાગબાન 47 પાઉચ",
             price: "₹60",
-            numericPrice: 60 
+            numericPrice: 60
         },
 
         {
@@ -154,6 +154,23 @@ const productData = {
 
     ],
 
+    "પાન મસાલા": [
+
+        {
+            id: "siggneture",
+            name: "સિગનેચર",
+            price: "₹250 ",
+            numericPrice: 250
+        },
+
+        {
+            id: "tansen",
+            name: "તાનસેન",
+            price: "₹220",
+            numericPrice: 220
+        }
+
+    ],
 
 
     "ઈગલ તમાકુ ": [
@@ -340,14 +357,14 @@ const productData = {
 
     ],
 
-    
+
     "બ્લેડ": [
 
         {
             id: "lezar_bled",
             name: "લેજર બ્લેડ",
             price: "₹85",
-            numericPrice: 85 
+            numericPrice: 85
         },
 
     ],
@@ -432,7 +449,7 @@ const productData = {
             numericPrice: 310
         },
 
-         {
+        {
             id: "babu_chuno_",
             name: "બાબુ ચૂનો ",
             price: "₹35",
@@ -586,7 +603,7 @@ const productData = {
             numericPrice: 87
         },
 
-         {
+        {
             id: "fs_regular_64mm_1_box",
             name: "ફોર સ્કવેર રેગ્યુલર નાની બોક્સ [ MRP - 89 ]",
             price: "₹1635",
@@ -607,7 +624,7 @@ const productData = {
             numericPrice: 2100
         },
 
-         {
+        {
             id: "fs_clove_69mm_1_pcs",
             name: "ફોર સ્કવેર કલોવે મોટી [ MRP - 90 ]",
             price: "₹82",
@@ -621,30 +638,30 @@ const productData = {
             numericPrice: 1560
         },
 
-        
 
-         {
+
+        {
             id: "fs_crush_64mm_1_pcs",
             name: "ફોર સ્કવેર ક્રશ નાની [ MRP - 85 ]",
             price: "₹83",
             numericPrice: 83
         },
 
-         {
+        {
             id: "fs_crush_64mm_1_box",
             name: "ફોર સ્કવેર ક્રશ નાની બોક્સ [ MRP - 85 ]",
             price: "₹1635",
             numericPrice: 1635
         },
 
-         {
+        {
             id: "fs_crush_69mm_1_pcs",
             name: "ફોર સ્કવેર ક્રશ મોટી [ MRP - 115 ]",
             price: "₹110",
             numericPrice: 110
         },
 
-         {
+        {
             id: "fs_crush_69mm_1_box",
             name: "ફોર સ્કવેર ક્રશ મોટી બોક્સ  [ MRP - 115 ]",
             price: "₹2140",
@@ -668,7 +685,7 @@ const productData = {
 
     ],
 
-    
+
     "બલ્બ": [
 
         {
@@ -709,8 +726,8 @@ const productData = {
         {
             id: "bulb_15w_15_PCS",
             name: "બલ્બ 15 W [ 15 બલ્બ ] ",
-            price: "₹1125",
-            numericPrice: 1125
+            price: "₹1050",
+            numericPrice: 1050
         }
 
 
@@ -1169,11 +1186,11 @@ function openInsideCategory(
         "block";
 
 
-   document
-    .getElementById(
-        "productCategoryTitle"
-    )
-    .innerText =
+    document
+        .getElementById(
+            "productCategoryTitle"
+        )
+        .innerText =
         categoryName === "બલ્બ"
             ? "બલ્બ { બધા બલ્બમાં 1 વર્ષની વોરંટી આપવામાં આવે છે }"
             : categoryName;
@@ -2132,7 +2149,7 @@ function sendBillToWhatsApp() {
                 "*\n";
 
 
-          
+
 
 
             bill +=
