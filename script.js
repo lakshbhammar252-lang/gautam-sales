@@ -161,7 +161,7 @@ const productData = {
             name: "સિગનેચર",
             price: "₹250 ",
             numericPrice: 250
-        },
+        }, 
 
         {
             id: "tansen",
@@ -739,18 +739,34 @@ const productData = {
     "સોપારી": [
 
         {
-            id: "સોપારી_1_kg",
-            name: "સોપારી 1 kg",
-            price: "₹640",
-            numericPrice: 640
+            id: "સોપારી_ફાડા_1_kg",
+            name: "ફાડા સોપારી 1 kg",
+            price: "₹500",
+            numericPrice: 500
+        },
+
+        
+        {
+            id: "સોપારી_ફાડા_70_kg_bori",
+            name: "ફાડા સોપારી ~ 70 kg બોરી ",
+            price: "₹30800",
+            numericPrice: 30800
         },
 
         {
-            id: "સોપારી_5_kg",
-            name: "સોપારી 5 kg",
-            price: "₹550",
-            numericPrice: 550
+            id: "સોપારી__ગોટા_1_kg",
+            name: "ગોટા સોપારી 1 kg",
+            price: "₹560",
+            numericPrice: 560
+        },
+
+         {
+            id: "સોપારી__ગોટા_80_kg_bori",
+            name: "ગોટા સોપારી ~ 80 kg બોરી",
+            price: "₹42400",
+            numericPrice: 42400
         }
+
 
     ]
 
