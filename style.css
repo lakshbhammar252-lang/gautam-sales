@@ -5002,3 +5002,8 @@ body {
     }
 
 }
+
+/* Gautam Sales: Home Screen Shine Animation બંધ */
+.category-card::before {
+    animation: none !important;
+}
